@@ -22,12 +22,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Virtual Interview Platform",
   description: "Conduct interviews with video calling, screen sharing, and collaborative code editing",
-  metadataBase: new URL("remote-interview-platform-xi.vercel.app"),
+  metadataBase: new URL("https://remote-interview-platform-xi.vercel.app"),
 
    openGraph: {
     title: "Virtual Interview Platform",
     description: "Conduct interviews like a pro — collaborate with candidates in real-time.",
-    url: "remote-interview-platform-xi.vercel.app",
+    url: "https://remote-interview-platform-xi.vercel.app",
     siteName: "Virtual Interview Platform",
     images: [
       {
