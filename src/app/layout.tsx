@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Virtual Interview Platform",
     images: [
       {
-        url: "https://remote-interview-platform-xi.vercel.app/preview.jpeg",
+        url: "/preview.jpeg",
         width: 1200,
         height: 630,
         alt: "Preview of Virtual Interview Platform",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Virtual Interview Platform",
     description: "Conduct interviews like a pro — collaborate with candidates in real-time.",
-    images: ["https://remote-interview-platform-xi.vercel.app/preview.jpeg"],
+    images: ["/preview.jpeg"],
   },
 };
 
