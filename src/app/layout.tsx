@@ -19,33 +19,27 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Virtual Interview Platform",
-  description: "Conduct interviews with video calling, screen sharing, and collaborative code editing",
-  metadataBase: new URL("https://remote-interview-platform-xi.vercel.app"),
+export default function Head() {
+  return (
+    <>
+      <title>Virtual Interview Platform</title>
+      <meta name="description" content="Conduct interviews with video calling, screen sharing, and collaborative code editing." />
 
-   openGraph: {
-    title: "Virtual Interview Platform",
-    description: "Conduct interviews like a pro — collaborate with candidates in real-time.",
-    url: "https://remote-interview-platform-xi.vercel.app",
-    siteName: "Virtual Interview Platform",
-    images: [
-      {
-        url: "/preview.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Preview of Virtual Interview Platform",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Virtual Interview Platform",
-    description: "Conduct interviews like a pro — collaborate with candidates in real-time.",
-    images: ["/preview.jpeg"],
-  },
-};
+      {/* Open Graph */}
+      <meta property="og:title" content="Virtual Interview Platform" />
+      <meta property="og:description" content="Conduct interviews like a pro — collaborate with candidates in real-time." />
+      <meta property="og:image" content="https://remote-interview-platform-xi.vercel.app/preview.jpeg" />
+      <meta property="og:url" content="https://remote-interview-platform-xi.vercel.app" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Virtual Interview Platform" />
+      <meta name="twitter:description" content="Conduct interviews like a pro — collaborate with candidates in real-time." />
+      <meta name="twitter:image" content="https://remote-interview-platform-xi.vercel.app/preview.jpeg" />
+    </>
+  );
+}
 
 export default function RootLayout({
   children,
